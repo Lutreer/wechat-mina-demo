@@ -1,16 +1,39 @@
 {
   "pages": [
     "pages/index/index",
-    "/pages/inn-list/list",
-    "/pages/inn-detail/detail"
+    "pages/inn/list/list",
+    "pages/inn/detail/detail",
+    "pages/strategy/list/list",
+    "pages/strategy/detail/detail"
   ],
   "window": {
-    "navigationBarBackgroundColor": "black",
+    "navigationBarBackgroundColor": "#1296db",
     "navigationBarTextStyle": "white",
-    "navigationBarTitleText": "sss",
-    "backgroundColor": "#808080",
+    "navigationBarTitleText": "番茄来了",
+    "backgroundColor": "#eeeeee",
     "backgroundTextStyle": "light",
-    "enablePullDownRefresh": false
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color":"#000",
+    "selectedColor":"#56abe4",
+    "backgroundColor":"#fff",
+    "borderStyle":"white",
+    "list": [{
+      "pagePath": "pages/inn/list/list",
+      "text": "客栈",
+      "iconPath":"images/common/inn.png",
+      "selectedIconPath":"images/common/inn-selected.png"
+    }, {
+      "pagePath": "pages/strategy/list/list",
+      "text": "攻略",
+      "iconPath":"images/common/strategy.png",
+      "selectedIconPath":"images/common/strategy-selected.png"
+    }, {
+      "pagePath": "pages/inn/detail/detail",
+      "text": "我的",
+      "iconPath":"images/common/mine.png",
+      "selectedIconPath":"images/common/mine-selected.png"
+    }]
   }
-
 }
